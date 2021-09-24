@@ -14,7 +14,6 @@ class SecretsManager {
      * Uses AWS Secrets Manager to retrieve a secret
      */
     static async getSecret (secretName, region){
-        console.log("afasfsfasf");
         const config = { region : region }
         var secret, decodedBinarySecret;
         let secretsManager = new AWS.SecretsManager(config);
